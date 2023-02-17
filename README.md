@@ -1,7 +1,5 @@
 Script em python que gera pergunta baseado no assunto (variavel "Topic) utilizando como nível de complexidade da pergunta a taxinomia de bloom (primeiro nível como padrão) e um link externo também como referência:
 
-Create a multiple choice question about {topic} at the first level of Bloom's Taxonomy of learning using this link for reference https://pt.wikipedia.org/wiki/Docker_(software)
-
 Como utilizar?
 
 1. Adicione a api key do open api em um arquivo .env (.env.sample como exemplo
