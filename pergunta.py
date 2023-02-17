@@ -9,7 +9,7 @@ load_dotenv()
 openai.api_key = os.getenv("APIKEY")
 
 def generate_question(topic):
-    prompt = f"crie uma pergunta de múltipla escolha sobre {topic} no {level} nível da Taxonomia de Bloom de aprendizagem utilize o link https://pt.wikipedia.org/wiki/Docker_(software) como referência"
+    prompt = f"crie uma pergunta de múltipla escolha sobre {topic} no {level} nível da Taxonomia de Bloom de aprendizagem utilize o link {link_ref} como referência"
     model = "text-davinci-002"
     response = openai.Completion.create(
         engine=model,
@@ -24,6 +24,10 @@ def generate_question(topic):
     return question
 
 topic = "Docker"
+
 level = "primeiro"
+
+link_ref = "https://pt.wikipedia.org/wiki/Docker_(software)"
+
 question = generate_question(topic)
 print(question)

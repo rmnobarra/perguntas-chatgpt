@@ -1,8 +1,8 @@
-Script em python que gera pergunta baseado no assunto (variavel "Topic) utilizando como nível de complexidade da pergunta a taxinomia de bloom (primeiro nível como padrão) e um link externo também como referência:
+Script em python que gera pergunta baseado no assunto (variavel "topic) utilizando como nível de complexidade da pergunta (variável "level") a taxinomia de bloom (primeiro nível como padrão) e um link externo também como referência (variavel "link_ref"):
 
 Como utilizar?
 
-1. Adicione a api key do open api em um arquivo .env (.env.sample como exemplo
+1. Adicione a api key do open api em um arquivo .env (.env.sample como exemplo)
    
 2. Instalando pre reqs:
 
